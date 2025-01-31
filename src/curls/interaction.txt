@@ -1,0 +1,7 @@
+curl --location 'http://localhost:3001/interaction' \
+--header 'Content-Type: application/json' \
+--data '{
+    "sourceId" : "schema002",
+    "destinationId" :"workflow-2", 
+    "type": "replace"
+}'

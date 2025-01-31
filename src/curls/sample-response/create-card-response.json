@@ -1,0 +1,586 @@
+{
+    "message": "Correct artifact(s) found",
+    "data": [
+        {
+            "agentId": "3224471f-d71d-42df-96c9-5d11443e2b11",
+            "metadata": {
+                "id": "6798a4bc28ed6325a787f78b",
+                "description": "IntentCardEvaluation",
+                "name": "Testing the api",
+                "primaryKey": [
+                    "agentId",
+                    "artifactId",
+                    "id"
+                ],
+                "universes": [
+                    "6751711d0eb9116a7d270830"
+                ],
+                "attributeList": [
+                    "agentId",
+                    "metadata",
+                    "artifactType",
+                    "childrenIds",
+                    "description",
+                    "reusability",
+                    "type",
+                    "parentId",
+                    "createdBy",
+                    "artifactName",
+                    "siblingIds",
+                    "artifactId",
+                    "id"
+                ],
+                "dbList": [
+                    "TIDB"
+                ],
+                "primaryDb": "TIDB",
+                "supportedDBTableStatus": {
+                    "TIDB": {
+                        "tablePresent": true,
+                        "remark": "Table with schemaId 6798a4bc28ed6325a787f78b is ready for data insertion."
+                    }
+                },
+                "piFeatures": {
+                    "COHORTS": {
+                        "COHORTS": [
+                            "TIDB"
+                        ]
+                    },
+                    "CONTEXT": {
+                        "CONTEXT": [
+                            "TIDB"
+                        ]
+                    },
+                    "BIGQUERY": {
+                        "BIGQUERY": [
+                            "TIDB"
+                        ]
+                    }
+                },
+                "oltp": true,
+                "indexes": [],
+                "vectorIndexFeatures": [],
+                "oltpFeature": {
+                    "indexingFeature": {},
+                    "queryingFeature": {
+                        "TIDB": [
+                            {
+                                "active": true
+                            }
+                        ]
+                    },
+                    "cachingFeature": {},
+                    "searchingFeature": {}
+                },
+                "draft": false,
+                "javascriptFunctions": {},
+                "tenantsWithReadDataAccess": {
+                    "f71f3593-a67a-40bc-a11a-9a44668b410d": [
+                        "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                    ]
+                },
+                "tenantsWithWriteDataAccess": [
+                    "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                ],
+                "tenantsWithMetadataReadAccess": [],
+                "tenantsWithMetadataWriteAccess": [],
+                "tags": {
+                    "BLUE": [
+                        "SCHEMA"
+                    ]
+                },
+                "attributesMap": {
+                    "agentId": {
+                        "name": "agentId",
+                        "nestedName": "agentId",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "metadata": {
+                        "name": "metadata",
+                        "nestedName": "metadata",
+                        "type": {
+                            "type": "json"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactType": {
+                        "name": "artifactType",
+                        "nestedName": "artifactType",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "childrenIds": {
+                        "name": "childrenIds",
+                        "nestedName": "childrenIds",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "description": {
+                        "name": "description",
+                        "nestedName": "description",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "reusability": {
+                        "name": "reusability",
+                        "nestedName": "reusability",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "type": {
+                        "name": "type",
+                        "nestedName": "type",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "parentId": {
+                        "name": "parentId",
+                        "nestedName": "parentId",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "createdBy": {
+                        "name": "createdBy",
+                        "nestedName": "createdBy",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactName": {
+                        "name": "artifactName",
+                        "nestedName": "artifactName",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "siblingIds": {
+                        "name": "siblingIds",
+                        "nestedName": "siblingIds",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactId": {
+                        "name": "artifactId",
+                        "nestedName": "artifactId",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "id": {
+                        "name": "id",
+                        "nestedName": "id",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    }
+                },
+                "additionalMetaData": {},
+                "dataReadAccess": "PUBLIC",
+                "dataWriteAccess": "PUBLIC",
+                "metadataReadAccess": "PUBLIC",
+                "metadataWriteAccess": "PUBLIC",
+                "schemaRetrievedType": "PRIVATE",
+                "createdBy": "f71f3593-a67a-40bc-a11a-9a44668b410d"
+            },
+            "createdBy": "PI_AGENT_V2",
+            "artifactName": "sample045",
+            "childrenIds": [],
+            "description": "schema for demo",
+            "reusability": "draft",
+            "artifactId": "6798a4bc28ed6325a787f78b",
+            "type": "atom",
+            "parentId": [],
+            "artifactType": "Schema",
+            "id": "UQN8vEUgB0vxIYlJJ3I3tkbM"
+        },
+        {
+            "agentId": "3224471f-d71d-42df-96c9-5d11443e2b11",
+            "metadata": {
+                "id": "6798a3d828ed6325a787f78a",
+                "description": "IntentCardEvaluation",
+                "name": "Intent-CardEvaluation Schema",
+                "primaryKey": [
+                    "agentId",
+                    "artifactId",
+                    "id"
+                ],
+                "universes": [
+                    "6751711d0eb9116a7d270830"
+                ],
+                "attributeList": [
+                    "agentId",
+                    "metadata",
+                    "artifactType",
+                    "childrenIds",
+                    "description",
+                    "reusability",
+                    "type",
+                    "parentId",
+                    "createdBy",
+                    "artifactName",
+                    "siblingIds",
+                    "artifactId",
+                    "id"
+                ],
+                "dbList": [
+                    "TIDB"
+                ],
+                "primaryDb": "TIDB",
+                "supportedDBTableStatus": {
+                    "TIDB": {
+                        "tablePresent": true,
+                        "remark": "Table with schemaId 6798a3d828ed6325a787f78a is ready for data insertion."
+                    }
+                },
+                "piFeatures": {
+                    "COHORTS": {
+                        "COHORTS": [
+                            "TIDB"
+                        ]
+                    },
+                    "CONTEXT": {
+                        "CONTEXT": [
+                            "TIDB"
+                        ]
+                    },
+                    "BIGQUERY": {
+                        "BIGQUERY": [
+                            "TIDB"
+                        ]
+                    }
+                },
+                "oltp": true,
+                "indexes": [],
+                "vectorIndexFeatures": [],
+                "oltpFeature": {
+                    "indexingFeature": {},
+                    "queryingFeature": {
+                        "TIDB": [
+                            {
+                                "active": true
+                            }
+                        ]
+                    },
+                    "cachingFeature": {},
+                    "searchingFeature": {}
+                },
+                "draft": false,
+                "javascriptFunctions": {},
+                "tenantsWithReadDataAccess": {
+                    "f71f3593-a67a-40bc-a11a-9a44668b410d": [
+                        "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                    ]
+                },
+                "tenantsWithWriteDataAccess": [
+                    "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                ],
+                "tenantsWithMetadataReadAccess": [],
+                "tenantsWithMetadataWriteAccess": [],
+                "tags": {
+                    "BLUE": [
+                        "SCHEMA"
+                    ]
+                },
+                "attributesMap": {
+                    "agentId": {
+                        "name": "agentId",
+                        "nestedName": "agentId",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "metadata": {
+                        "name": "metadata",
+                        "nestedName": "metadata",
+                        "type": {
+                            "type": "json"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactType": {
+                        "name": "artifactType",
+                        "nestedName": "artifactType",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "childrenIds": {
+                        "name": "childrenIds",
+                        "nestedName": "childrenIds",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "description": {
+                        "name": "description",
+                        "nestedName": "description",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "reusability": {
+                        "name": "reusability",
+                        "nestedName": "reusability",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "type": {
+                        "name": "type",
+                        "nestedName": "type",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "parentId": {
+                        "name": "parentId",
+                        "nestedName": "parentId",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "createdBy": {
+                        "name": "createdBy",
+                        "nestedName": "createdBy",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactName": {
+                        "name": "artifactName",
+                        "nestedName": "artifactName",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "siblingIds": {
+                        "name": "siblingIds",
+                        "nestedName": "siblingIds",
+                        "type": {
+                            "type": "array",
+                            "itemType": "string"
+                        },
+                        "required": false,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "artifactId": {
+                        "name": "artifactId",
+                        "nestedName": "artifactId",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    },
+                    "id": {
+                        "name": "id",
+                        "nestedName": "id",
+                        "type": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "reference": false,
+                        "access": "PUBLIC",
+                        "childAttributesMap": {}
+                    }
+                },
+                "additionalMetaData": {},
+                "dataReadAccess": "PUBLIC",
+                "dataWriteAccess": "PUBLIC",
+                "metadataReadAccess": "PUBLIC",
+                "metadataWriteAccess": "PUBLIC",
+                "schemaRetrievedType": "PRIVATE",
+                "createdBy": "f71f3593-a67a-40bc-a11a-9a44668b410d"
+            },
+            "createdBy": "PI_AGENT_V2",
+            "artifactName": "sample067",
+            "childrenIds": [],
+            "description": "schema for demo",
+            "reusability": "draft",
+            "artifactId": "6798a3d828ed6325a787f78a",
+            "type": "atom",
+            "parentId": [],
+            "artifactType": "Schema",
+            "id": "QcllMqNcFcgNysPbrQLuZEjo"
+        },
+        {
+            "agentId": "3224471f-d71d-42df-96c9-5d11443e2b11",
+            "metadata": {
+                "status": "success",
+                "msg": "success",
+                "model": {
+                    "id": "6799d2ffbe88837a27be5a66",
+                    "name": "Address Deatils",
+                    "description": "Address Deatils",
+                    "schemaId": "6799c479da219b7fc922c463",
+                    "initPopulated": true,
+                    "initEvaluationStatus": "Cohort Evaluated Successfully",
+                    "tenantID": "f71f3593-a67a-40bc-a11a-9a44668b410d",
+                    "active": true,
+                    "draft": false,
+                    "additionalMetadata": {},
+                    "definitionRequest": {
+                        "rawQueryMap": {
+                            "TIDB": "SELECT * FROM t_6799c479da219b7fc922c463_t where city = 'Hyderabad'"
+                        },
+                        "derivedAttrs": {},
+                        "tables": [
+                            "6799c479da219b7fc922c463"
+                        ]
+                    },
+                    "defaultProjection": [],
+                    "universes": [
+                        "6751711d0eb9116a7d270830"
+                    ],
+                    "visibility": "PUBLIC",
+                    "updatedTimeMs": 1738134271963,
+                    "createdTimeMs": 1738134271963,
+                    "createdBy": "ksamxp ksamxp",
+                    "percolateIndexPresent": false,
+                    "tags": {
+                        "RED": [
+                            "Cohorts"
+                        ]
+                    },
+                    "dataReadAccess": "PUBLIC",
+                    "metadataReadAccess": "PUBLIC",
+                    "metadataWriteAccess": "PUBLIC",
+                    "execute": "PUBLIC",
+                    "tenantsWithDataReadAccess": [
+                        "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                    ],
+                    "tenantsWithDataExecuteAccess": [
+                        "f71f3593-a67a-40bc-a11a-9a44668b410d"
+                    ],
+                    "tenantsWithMetadataReadAccess": [],
+                    "tenantsWithMetadataWriteAccess": [],
+                    "dbsUsedInCohort": [
+                        "TIDB"
+                    ],
+                    "primaryDb": "TIDB",
+                    "accessibleTenants": []
+                }
+            },
+            "createdBy": "PI_AGENT_V2",
+            "artifactName": "Address Deatils",
+            "childrenIds": [
+                "6799c479da219b7fc922c463"
+            ],
+            "description": "sample details",
+            "reusability": "draft",
+            "artifactId": "6799d2ffbe88837a27be5a66",
+            "type": "molecule",
+            "parentId": [],
+            "artifactType": "Cohort",
+            "id": "ByJ4H4kBeL0GscY8JMj5w17s"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+curl --location 'http://localhost:3001/create-card' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Ny1NUVdFRTNHZE5adGlsWU5IYmpsa2dVSkpaWUJWVmN1UmFZdHl5ejFjIn0.eyJleHAiOjE3MjYxODIzMzEsImlhdCI6MTcyNjE0NjMzMSwianRpIjoiOGVlZTU1MDctNGVlOC00NjE1LTg3OWUtNTVkMjViMjQ2MGFmIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmtleWNsb2FrLnN2Yy5jbHVzdGVyLmxvY2FsOjgwODAvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJmNzFmMzU5My1hNjdhLTQwYmMtYTExYS05YTQ0NjY4YjQxMGQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJIT0xBQ1JBQ1kiLCJzZXNzaW9uX3N0YXRlIjoiYmI1ZjJkMzktYTQ3ZC00MjI0LWFjZGMtZTdmNzQwNDc2OTgwIiwibmFtZSI6ImtzYW14cCBrc2FteHAiLCJnaXZlbl9uYW1lIjoia3NhbXhwIiwiZmFtaWx5X25hbWUiOiJrc2FteHAiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJwYXNzd29yZF90ZW5hbnRfa3NhbXhwQG1vYml1c2R0YWFzLmFpIiwiZW1haWwiOiJwYXNzd29yZF90ZW5hbnRfa3NhbXhwQG1vYml1c2R0YWFzLmFpIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7IkhPTEFDUkFDWSI6eyJyb2xlcyI6WyJIT0xBQ1JBQ1lfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiYmI1ZjJkMzktYTQ3ZC00MjI0LWFjZGMtZTdmNzQwNDc2OTgwIiwidGVuYW50SWQiOiJmNzFmMzU5My1hNjdhLTQwYmMtYTExYS05YTQ0NjY4YjQxMGQiLCJyZXF1ZXN0ZXJUeXBlIjoiVEVOQU5UIn0=.FXeDyHBhlG9L4_NCeSyHEaNEBVmhFpfSBqlcbhHaPaoydhKcA0BfuyHgxg_32kQk6z5S9IQ7nVKS2ybtOvwo0WyLWwLQchSq7Noa7LooHIMzmeWMQb_bLKtbaOti59zwIdS8CkfGaXut7RUQKISQVWmbUGsVJQa2JkG6Ng_QN0y5hFVksMWPZiXVsofQkJXHXV1CQ3gabhhHKo3BqlJwzpsCKLDfg1-4PmSl1Wqbw03Ef2yolroj5i8FoeHukOQPkwCUHrrNw-ilIp917nqZa89YbCMtDjWyaj8pEH7GJR5vMZPE2WcJPn5dSA1IHVunfatEB1cDAitaFjVNWNnddq' \
+--data '{
+    "agentId": "3224471f-d71d-42df-96c9-5d11443e2b11",
+    "agentReasoning": [
+        {
+            "agentName": "PI_AGENT_V2",
+            "artifacts": [
+                null
+            ],
+            "messages": [
+                "The schemas have been successfully created. Here are the details:\n\n1. **Schema Name:** sample067\n   - **Schema ID:** 6788a71d2028154e85126459\n   - **Description:** schema for demo\n   - **Primary Key:** id\n   - **Universe ID:** 674d79a5efa6071ccf034771\n   - **Attributes:**\n     - id (string, required)\n     - prompt (string, optional)\n\n2. **Schema Name:** sample045\n   - **Schema ID:** 6788a71d2028154e8512645a\n   - **Description:** schema for demo\n   - **Primary Key:** id\n   - **Universe ID:** 674d79a5efa6071ccf034771\n   - **Attributes:**\n     - id (string, required)\n     - prompt (string, optional)\n\nIf you need any further assistance, feel free to ask!"
+            ],
+            "nodeId": "seqAgent_0",
+            "nodeName": "seqAgent",
+            "sourceDocuments": [
+                null
+            ],
+            "state": {},
+            "usedTools": [
+                {
+                    "tool": "pi_create_schema",
+                    "toolInput": {
+                        "attributes": "[{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]} ]",
+                        "description": "schema for demo",
+                        "primaryKey": "id",
+                        "schemaName": "sample045",
+                        "universes": "674d79a5efa6071ccf034771"
+                    },
+                    "toolOutput": "{\"status\":\"success\",\"msg\":\"EntitySchema created\",\"schemaId\":\"6798a4bc28ed6325a787f78b\",\"entitySchema\":{\"name\":\"schemaName1737008925811\",\"primaryKey\":[\"id\"],\"attributes\":[{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]}],\"draft\":false,\"universes\":[\"674d79a5efa6071ccf034771\"],\"javascriptFunctions\":{},\"tenantsWithReadDataAccess\":{\"f71f3593-a67a-40bc-a11a-9a44668b410d\":[\"f71f3593-a67a-40bc-a11a-9a44668b410d\"]},\"tenantsWithWriteDataAccess\":[\"f71f3593-a67a-40bc-a11a-9a44668b410d\"],\"tidbStatus\":{\"tablePresent\":false,\"remark\":\"Table not yet created\"},\"neo4jSchemaNodeStatus\":{},\"additionalMetaData\":{},\"tags\":{\"BLUE\":[]},\"oltponly\":false},\"tenantID\":\"f71f3593-a67a-40bc-a11a-9a44668b410d\"}"
+                },
+                {
+                    "tool": "pi_create_schema",
+                    "toolInput": {
+                        "attributes": "[{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]} ]",
+                        "description": "schema for demo",
+                        "primaryKey": "id",
+                        "schemaName": "sample067",
+                        "universes": "674d79a5efa6071ccf034771"
+                    },
+                    "toolOutput": "{\"status\":\"success\",\"msg\":\"EntitySchema created\",\"schemaId\":\"6798a3d828ed6325a787f78a\",\"entitySchema\":{\"name\":\"schemaName1737008925805\",\"primaryKey\":[\"id\"],\"attributes\":[{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]}],\"draft\":false,\"universes\":[\"674d79a5efa6071ccf034771\"],\"javascriptFunctions\":{},\"tenantsWithReadDataAccess\":{\"f71f3593-a67a-40bc-a11a-9a44668b410d\":[\"f71f3593-a67a-40bc-a11a-9a44668b410d\"]},\"tenantsWithWriteDataAccess\":[\"f71f3593-a67a-40bc-a11a-9a44668b410d\"],\"tidbStatus\":{\"tablePresent\":false,\"remark\":\"Table not yet created\"},\"neo4jSchemaNodeStatus\":{},\"additionalMetaData\":{},\"tags\":{\"BLUE\":[]},\"oltponly\":false},\"tenantID\":\"f71f3593-a67a-40bc-a11a-9a44668b410d\"}"
+                },
+                {
+          "tool": "DBAAS_COHORT_CREATION1", 
+          "toolInput": {
+            "description": "sample details", 
+            "name": "Address Deatils", 
+            "query": "SELECT * FROM t_6799c479da219b7fc922c463_t where city = '\''Hyderabad'\''", 
+            "schemaId": "6784c28f7f984e2fc9b2d482", 
+            "universes": "[\"66aa30f77daee22fb1f1d214\"]"
+          }, 
+          "toolOutput": "{\"status\":\"success\",\"msg\":\"Group Created\",\"id\":\"6799d2ffbe88837a27be5a66\",\"name\":\"sample2345987\"}"
+        }
+            ]
+        }
+    ],
+    "caller": "null",
+    "chatId": "1be5e8d2-6955-4f26-b45a-e18f769eb7df",
+    "chatMessageId": "5e2bcbc3-a8ce-4f0b-85c0-a1e6450124e3",
+    "question": "Create a schema with the following attributes: [{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]}]. The schema should be named '\''sample067'\'', with the description '\''schema for demo'\''. It should belong to the universe with ID '\''674d79a5efa6071ccf034771'\'', and the primary key should be '\''id'\''. Please ensure all details are correctly implemented. Create a schema with the following attributes: [{\"name\":\"id\",\"nestedName\":\"id\",\"type\":{\"type\":\"string\"},\"required\":true,\"reference\":false,\"videos\":[],\"childAttributes\":[]},{\"name\":\"prompt\",\"nestedName\":\"prompt\",\"type\":{\"type\":\"string\"},\"required\":false,\"reference\":false,\"videos\":[],\"childAttributes\":[]}]. The schema should be named '\''sample045'\'', with the description '\''schema for demo'\''. It should belong to the universe with ID '\''674d79a5efa6071ccf034771'\'', and the primary key should be '\''id'\''. Please ensure all details are correctly implemented. ",
+    "sessionId": "1be5e8d2-6955-4f26-b45a-e18f769eb7df",
+    "text": "The schemas have been successfully created. Here are the details:\n\n1. **Schema Name:** sample067\n   - **Schema ID:** 6788a71d2028154e85126459\n   - **Description:** schema for demo\n   - **Primary Key:** id\n   - **Universe ID:** 674d79a5efa6071ccf034771\n   - **Attributes:**\n     - id (string, required)\n     - prompt (string, optional)\n\n2. **Schema Name:** sample045\n   - **Schema ID:** 6788a71d2028154e8512645a\n   - **Description:** schema for demo\n   - **Primary Key:** id\n   - **Universe ID:** 674d79a5efa6071ccf034771\n   - **Attributes:**\n     - id (string, required)\n     - prompt (string, optional)\n\nIf you need any further assistance, feel free to ask!"
+}'

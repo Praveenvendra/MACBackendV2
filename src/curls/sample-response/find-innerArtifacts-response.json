@@ -1,0 +1,75 @@
+{
+  "artifactType": "workflow",
+  "childrenIds": ["6752cd397e54422d5834eb23", "6752cd397e54422d5834eb24"],
+  "description": "Playbook for resolving customer support issues for voxa",
+  "reusability": "deployed",
+  "type": "playbook",
+  "artifactName": "Customer Issue Resolution",
+  "artifactId": "6752bc397e54422d5834eb45",
+  "innerCardDetails": [
+    {
+      "artifactType": "workflow",
+      "childrenIds": ["6752ce25eb19703e29808285"],
+      "description": "Calculate the average number of automation rules defined per user",
+      "reusability": "deployed",
+      "type": "compound",
+      "artifactName": "RulesPerUser",
+      "artifactId": "6752cd397e54422d5834eb23",
+      "innerCardDetails": [
+        {
+          "artifactType": "cohort",
+          "childrenIds": ["65d583923027ad109e9ef113"],
+          "description": "Currently active automation rules",
+          "reusability": "deployed",
+          "type": "molecule",
+          "artifactName": "ActiveAutomationRules",
+          "artifactId": "6752ce25eb19703e29808285",
+          "innerCardDetails": [
+            {
+              "artifactType": "schema",
+              "childrenIds": [],
+              "description": "Devices Schema details",
+              "reusability": "deployed",
+              "type": "atom",
+              "artifactName": "Devices Schema",
+              "artifactId": "65d583923027ad109e9ef113",
+              "innerCardDetails": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "artifactType": "workflow",
+      "childrenIds": ["6752ce25eb19703e29808284"],
+      "description": "Breakdown of user roles (e.g., admin, user, guest) and their respective counts",
+      "reusability": "deployed",
+      "type": "compound",
+      "artifactName": "UserRoleDistribution",
+      "artifactId": "6752cd397e54422d5834eb24",
+      "innerCardDetails": [
+        {
+          "artifactType": "cohort",
+          "childrenIds": ["65d583hga69y9096167"],
+          "description": "Checks if a given user has an admin role",
+          "reusability": "deployed",
+          "type": "molecule",
+          "artifactName": "IsUserAdmin",
+          "artifactId": "6752ce25eb19703e29808284",
+          "innerCardDetails": [
+            {
+              "artifactType": "schema",
+              "childrenIds": [],
+              "description": "User details",
+              "reusability": "deployed",
+              "type": "atom",
+              "artifactName": "User Schema",
+              "artifactId": "65d583hga69y9096167",
+              "innerCardDetails": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
